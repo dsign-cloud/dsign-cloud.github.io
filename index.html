@@ -16,12 +16,41 @@
       pointer-events: none;
       z-index: 2000;
     }
+    
+    #minimap_ind{
+      position: absolute;
+      top: 0; right: 0;
+      width: 200px;height: 200px;
+      background-image: url("/assets/minimap_ind-D6z99Rj_.png");
+      opacity: 0.5;
+      z-index: 1000;
+      transform: rotate(0deg);
+       clip-path: circle(50% at 50% 50%)
+      
+    }
+    
+    #minimap{
+      position: absolute;
+      top: 0px; right: 0px;
+      width: 200px;height: 200px;
+      background-image: url("/assets/minimapa_scaled-DPVbz5vT.jpg");
+      /* background-position: -1000px -1000px; */
+      /* background-size: 2175px 2175px; */
+      background-position: -400px -400px;
+      background-size: 1000px 1000px;
+      opacity: 0.5;
+      z-index: 500;
+       clip-path: circle(50% at 50% 50%)
+      
+    }
   </style>
-  <script type="module" crossorigin src="/assets/index-DFpEadhm.js"></script>
+  <script type="module" crossorigin src="/assets/index-DyYLPPBJ.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-UtE5jiDe.css">
 </head>
 <body>
   <div id="fadeOverlay"></div>
+  <div id="minimap_ind"></div>
+  <div id="minimap"> </div>
   <div id="gsviewer"></div>
 </body>
 </html>

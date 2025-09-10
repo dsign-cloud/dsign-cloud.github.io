@@ -16,45 +16,44 @@
       pointer-events: none;
       z-index: 2000;
     }
-   #minimap {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 710px;
-    height: 550px;
-    transform-origin: bottom left;
-    background-image: url("assets/arenas_minimap2.png");
-    background-size: 710px 550px; /* exact pixel size */
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: 500;
-    overflow: hidden; /* ensure indicator stays visually inside */
-    /* border: 1px solid rgba(0,0,0,0.4); */
-    scale: 0.25; /* adjust minimap size */
-    transition: opacity 0.3s ease, scale 0.3s ease;
-    margin: 50px;
-  }
 
- 
-    #overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: url("assets/area_plaza.png"); /* Set your overlay image here */
-      background-size: cover; /* Cover the entire minimap */
-      pointer-events: none;
-      z-index: 600; /* Ensure it is above the minimap but below other elements */
-    }
+#minimap {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 710px;
+height: 550px;
+transform-origin: bottom left;
+background-image: url("assets/earth.png");
+background-size: 710px 550px; /* exact pixel size */
+background-repeat: no-repeat;
+opacity: 0.5;
+z-index: 500;
+overflow: hidden; /* ensure indicator stays visually inside */
+scale: 0.45; /* adjust minimap size */
+transition: opacity 0.3s ease, scale 0.3s ease;
+margin: 50px;
+/* add round border */
+border-radius: 20px; /* adjust the radius as needed */
+overflow: hidden; /* clip the content */
+}
+
+#overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background-image: url("assets/area_plaza.png"); /* Set your overlay image here */
+background-size: cover; /* Cover the entire minimap */
+pointer-events: none;
+z-index: 600; /* Ensure it is above the minimap but below other elements */
+}
    
 
-  
-
-  /* On hover increse size and opacity */
-  #minimap:hover {
-    opacity: 0.75;
-    scale: 0.75;
-   
-  }
+/* On hover increse size and opacity */
+#minimap:hover {
+opacity: 0.95;
+scale: 0.95;
+}
 
 /* CSS */
 #minimap_indicator {
@@ -82,7 +81,7 @@
 }
 
   </style>
-  <script type="module" crossorigin src="/assets/index-D-pyeiZB.js"></script>
+  <script type="module" crossorigin src="/assets/index-BBpyWmVX.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-UtE5jiDe.css">
 </head>
 <body>
